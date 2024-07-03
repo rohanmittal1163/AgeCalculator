@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	background-image: linear-gradient(135deg, #4203a9, #90bafc);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.heading,
+.topic {
+	color: white;
+	font-weight: bolder;
+	font-size: 4rem;
+	text-transform: capitalize;
+}
+.topic {
+	color: yellow;
+}
+.main {
+	background-color: rgba(255, 255, 255, 0.6);
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 5px;
+	padding: 18px;
+	width: 100%;
+	position: relative;
+}
+.main input {
+	background-color: white;
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+}
+.main input[type='submit'] {
+	background-color: yellow;
+	color: black;
+	padding: 15px 20px;
+	width: 30%;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+}
+.answer {
+	font-size: 1rem;
+	color: white;
+	text-transform: capitalize;
+}
+.answer span {
+	color: yellow;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-position: calc(100% - 10px) 30%;
+	background-size: 20px;
+	cursor: pointer;
+}
